@@ -1,18 +1,18 @@
 from PIL import Image, ImageEnhance
 
 ############### 控制面版 ###############
-第一張圖左上角x座標 = 10
-第一張圖左上角y座標 = 1172
-第一張圖右下角x座標 = 864
-第一張圖右下角y座標 = 2254
-第二張圖左上角y座標 = 2275
+第一張圖左上角x座標 = 0
+第一張圖左上角y座標 = 2558
+第一張圖右下角x座標 = 1347
+第一張圖右下角y座標 = 4354
+第二張圖左上角y座標 = 4372
 
 亮度 = 1
-對比 = 1.1
-飽和度 = 1
+對比 = 1.25
+飽和度 = 3
 銳利度 = 1
 
-圖片目錄 = "1.jpg"
+圖片目錄 = "2.png"
 存檔從編號多少開始 = 1
 ############### 控制面版 ###############
 
@@ -48,7 +48,7 @@ while( (i+height) < bottom ):
     output = sharpness.enhance(銳利度)        # 提高銳利度
 
     print("存檔…")
-    output.save(f"./clipped/clipped_{n}.jpg")
+    output.save(f"./clipped/clipped_{n}.png")
 
     print("存檔完畢")
     i += delta
