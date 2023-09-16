@@ -1,6 +1,6 @@
 # 使用本程式的環境：
 # 1：安裝好 Python 3（我開發時用的是 Python 3.11.5）
-# 2：pip install requirements.txt
+# 2：pip install -r requirements.txt
 # 3：自行安裝好 poppler
 # 4：自行安裝好 potrace
 # 5：自行安裝好在你系統中 cairosvg 需要的依賴項
@@ -21,16 +21,16 @@ from png2pdf import pngs2pdf
 from merge_pdf import merge_pdf
 ######### Functions，可解除註解後直接執行本檔案（main.py）使用 #########
 #---------------------------------------------------------------------
-# split_pdf(要分割的單檔多頁PDF檔 = "./pdf_unsplit/cover~867.pdf",
-#           輸出檔案的編碼從幾開始 = 1,
-#           存檔目錄 = "./pdf_splitted")
+# split_pdf(要分割的單檔多頁PDF檔 = "C:\\Users\\User\\Desktop\\ebooks\\part_5.pdf",
+#           輸出檔案的編碼從幾開始 = 1201,
+#           存檔目錄 = "C:\\Users\\User\\Desktop\\ebooks\\pdf_splitted")
 
 #---------------------------------------------------------------------
-# pdf2png(PDF目錄="E:\\pdf_splitted",
-#         編號開始=862,
-#         編號結束=863,
-#         PNG存檔目錄="E:\\unclipped_png",
-#         DPI = 946)
+pdf2png(PDF目錄="C:\\Users\\User\\Desktop\\ebooks\\pdf_splitted",
+        編號開始=1,
+        編號結束=10,
+        PNG存檔目錄="C:\\Users\\User\\Desktop\\ebooks\\png_splitted",
+        DPI = 100)
 
 #---------------------------------------------------------------------
 # manualclip(
@@ -83,6 +83,6 @@ from merge_pdf import merge_pdf
 # )
 
 #---------------------------------------------------------------------
-split_pdf_bypage(要分割的單檔多頁PDF檔 = "./principles_of_physics_12e.pdf",
-                    每多少頁要分割一檔 = 300,
-                    存檔目錄 = ".")
+# split_pdf_bypage(要分割的單檔多頁PDF檔 = "./principles_of_physics_12e.pdf",
+#                     每多少頁要分割一檔 = 300,
+#                     存檔目錄 = ".")
