@@ -21,16 +21,16 @@ from png2pdf import pngs2pdf
 from merge_pdf import merge_pdf
 ######### Functions，可解除註解後直接執行本檔案（main.py）使用 #########
 #---------------------------------------------------------------------
-# split_pdf(要分割的單檔多頁PDF檔 = "C:\\Users\\User\\Desktop\\ebooks\\part_5.pdf",
-#           輸出檔案的編碼從幾開始 = 1201,
-#           存檔目錄 = "C:\\Users\\User\\Desktop\\ebooks\\pdf_splitted")
+split_pdf(要分割的單檔多頁PDF檔 = "/content/drive/My Drive/書籍資料/principles of physics 12e/part_1.pdf",
+          輸出檔案的編碼從幾開始 = 1,
+          存檔目錄 = "/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf")
 
 #---------------------------------------------------------------------
-pdf2png(PDF目錄="/content/drive/My Drive/書籍資料/principles of physics 12e",
-        編號開始=1,
-        編號結束=5,
-        PNG存檔目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_png",
-        DPI = 100)
+# pdf2png(PDF目錄="/content/drive/My Drive/書籍資料/principles of physics 12e",
+#         編號開始=1,
+#         編號結束=5,
+#         PNG存檔目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_png",
+#         DPI = 100)
 
 #---------------------------------------------------------------------
 # manualclip(
