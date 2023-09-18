@@ -21,8 +21,8 @@ from png2pdf import pngs2pdf
 from merge_pdf import merge_pdf
 ######### Functions，可解除註解後直接執行本檔案（main.py）使用 #########
 #---------------------------------------------------------------------
-split_pdf(要分割的單檔多頁PDF檔 = "/content/drive/My Drive/書籍資料/principles of physics 12e/part_3.pdf",
-          輸出檔案的編碼從幾開始 = 601,
+split_pdf(要分割的單檔多頁PDF檔 = "/content/drive/My Drive/書籍資料/principles of physics 12e/part_4.pdf",
+          輸出檔案的編碼從幾開始 = 901,
           存檔目錄 = "/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf")
 
 #---------------------------------------------------------------------
