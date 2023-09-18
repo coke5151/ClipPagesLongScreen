@@ -26,11 +26,11 @@ from merge_pdf import merge_pdf
 #           存檔目錄 = "/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf")
 
 #---------------------------------------------------------------------
-pdf2png(PDF目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf",
-        編號開始=1,
-        編號結束=10,
-        PNG存檔目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_png",
-        DPI = 100)
+# pdf2png(PDF目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf",
+#         編號開始=1,
+#         編號結束=10,
+#         PNG存檔目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_png",
+#         DPI = 100)
 
 #---------------------------------------------------------------------
 # manualclip(
