@@ -19,11 +19,18 @@ from manualclip import manualclip
 from pdf2png import pdf2png
 from png2pdf import pngs2pdf
 from merge_pdf import merge_pdf
+from pdfsort import left_right_pdfsort
 ######### Functions，可解除註解後直接執行本檔案（main.py）使用 #########
 #---------------------------------------------------------------------
-# split_pdf(要分割的單檔多頁PDF檔 = "/content/drive/My Drive/書籍資料/principles of physics 12e/part_5.pdf",
-#           輸出檔案的編碼從幾開始 = 1201,
-#           存檔目錄 = "/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf")
+# split_pdf(要分割的單檔多頁PDF檔 = "./final_result.pdf",
+#           輸出檔案的編碼從幾開始 = 1,
+#           存檔目錄 = "./calculus_parts/")
+
+#---------------------------------------------------------------------
+# left_right_pdfsort(
+#     編號 = range(311, 769+1, 2),
+#     PDF檔案目錄 = "./calculus_parts"
+#     )
 
 #---------------------------------------------------------------------
 # pdf2png(PDF目錄="/content/drive/My Drive/書籍資料/principles of physics 12e/splitted_pdf",
@@ -76,11 +83,11 @@ from merge_pdf import merge_pdf
 # )
 
 #---------------------------------------------------------------------
-# merge_pdf(
-#     編號 = range(1, 1461, 10),
-#     PDF檔案目錄 = ".",
-#     合併檔案存檔 = "./final_result.pdf"
-# )
+merge_pdf(
+    編號 = range(1, 770, 1),
+    PDF檔案目錄 = "./calculus_parts",
+    合併檔案存檔 = "./final_result.pdf"
+)
 
 #---------------------------------------------------------------------
 # split_pdf_bypage(要分割的單檔多頁PDF檔 = "./principles_of_physics_12e.pdf",

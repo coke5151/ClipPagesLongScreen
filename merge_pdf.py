@@ -7,7 +7,8 @@ def merge_pdf(
     output = Pdf.new()     
     for i in 編號:
         print(f"合併第 {i} 編號的檔案…")
-        pdf = Pdf.open(f"{PDF檔案目錄}/result_{i}.pdf")
+        pdf = Pdf.open(f"{PDF檔案目錄}/splitted_{i}.pdf")        
+        # pdf = Pdf.open(f"{PDF檔案目錄}/result_{i}.pdf")
         output.pages.extend(pdf.pages)
     print("存檔…")
     output.save(合併檔案存檔)
