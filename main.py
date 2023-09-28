@@ -83,11 +83,11 @@ from pdfsort import left_right_pdfsort
 # )
 
 #---------------------------------------------------------------------
-merge_pdf(
-    編號 = range(1, 770, 1),
-    PDF檔案目錄 = "./calculus_parts",
-    合併檔案存檔 = "./final_result.pdf"
-)
+# merge_pdf(
+#     編號 = range(1, 770, 1),
+#     PDF檔案目錄 = "./calculus_parts",
+#     合併檔案存檔 = "./final_result.pdf"
+# )
 
 #---------------------------------------------------------------------
 # split_pdf_bypage(要分割的單檔多頁PDF檔 = "./principles_of_physics_12e.pdf",
